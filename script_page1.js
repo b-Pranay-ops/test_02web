@@ -511,8 +511,3 @@ window.onload = () =>{
         createForm();
     }
 }
-// updateUploadedFileStatus(false);
-// createForm();
-
-
-
