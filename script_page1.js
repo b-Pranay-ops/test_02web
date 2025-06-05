@@ -404,7 +404,7 @@ function SubmitbuttonClicked(e){
     
     // Redirect to page 2
    setTimeout(() => {
-        window.location.href = '../modified_pg2/page2.html'; // Redirect to another page
+        window.location.href = 'modified_pg2/page2.html'; // Redirect to another page
     }, 2000);
 }
 
