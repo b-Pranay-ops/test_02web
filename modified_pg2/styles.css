@@ -2,15 +2,11 @@
 .header-strip {
     width: 100%;
     height: 20px; /* Adjusted height to make it more rectangular */
-    background-image: url('icon/strip.png'); /* Replace with your image URL */
+    background-image: url('../icon/strip.png'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full screen height */
-  }
+
 .title-container {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,7 +24,7 @@
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
@@ -36,14 +32,16 @@
     padding: 50px 0;
 }
 
- .footer-container {
+.footer-container {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
      bottom: 20px;
     /* position:absolute; */
-     width: 100%; 
-} 
+    width: 100%; 
+}
+
+/* Styling for Form Questions */
 #survey-form {
     display: flex;
     flex-direction: column;
@@ -87,8 +85,6 @@
 #submit-btn:hover {
     background-color: #0056b3;
 }
-
-/* Styling for Form Questions */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -102,6 +98,10 @@ form .form-control, form .form-select {
     padding: 10px;
 }
 
+.light-placeholder {
+    color: gray;
+  }
+
 /* Make sure Add + button does not stretch across */
 table .btn .btn-sm {
     width: auto;  /* Prevent stretching */
@@ -112,7 +112,18 @@ table .btn .btn-sm {
 .table-group {
     margin-bottom: 20px;
 }
+.custom-delete-btn {
+/*background-color: #eeeded; /* Custom orange-red color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.custom-delete-btn:hover {
+    background-color: #df3812; /* Darker shade on hover */
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -145,11 +156,9 @@ table .btn .btn-sm {
 .footer-strip {
     width: 100%;
     height: 20px; /* Adjust the height */
-    /* position:fixed; */
-    background-image: url('icon/strip.png'); /* Your strip image URL */
+    background-image: url('../icon/strip.png'); /* Your strip image URL */
     background-size: cover;
     background-position: center;
-  
     /* margin-top: 20px; /* Optional: adds spacing between the footer and the strip */
 }
 /* Responsive Adjustments */

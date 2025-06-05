@@ -2,15 +2,11 @@
 .header-strip {
     width: 100%;
     height: 20px; /* Adjusted height to make it more rectangular */
-    background-image: url('icon/strip.png'); /* Replace with your image URL */
+    background-image: url('../icon/strip.png'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full screen height */
-  }
+
 .title-container {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,7 +24,7 @@
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
@@ -36,56 +32,10 @@
     padding: 50px 0;
 }
 
- .footer-container {
+.footer-container {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
-     bottom: 20px;
-    /* position:absolute; */
-     width: 100%; 
-} 
-#survey-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#survey-form .mb-3 {
-    display: flex;
-    flex-direction: column;
-}
-
-#survey-form .form-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#survey-form .form-control {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#submit-btn {
-    padding: 12px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#submit-btn:hover {
-    background-color: #0056b3;
 }
 
 /* Styling for Form Questions */
@@ -137,20 +87,43 @@ table .btn .btn-sm {
 }
 
 /* Remove right border from the last column */
-/* table tbody tr td:last-child {
+table tbody tr td:last-child {
     border-top: none !important;
     border-bottom: none !important;
     border-left: none !important;
-} */
+}
+.wide-container {
+    max-width: 90% !important;
+    min-height: 700px;
+}
+
+.chart-container {
+    /* width: 100%; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#chart-title-2, #chart-title-3{
+    background-color: rgb(166, 185, 185) !important;
+}
+.chart-title-container {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.chart-view {
+    min-height: 500px; /* Adjust height based on requirement */
+}
 .footer-strip {
     width: 100%;
     height: 20px; /* Adjust the height */
-    /* position:fixed; */
-    background-image: url('icon/strip.png'); /* Your strip image URL */
+    background-image: url('../icon/strip.png'); /* Your strip image URL */
     background-size: cover;
     background-position: center;
-  
-    /* margin-top: 20px; /* Optional: adds spacing between the footer and the strip */
 }
 /* Responsive Adjustments */
 @media (max-width: 768px) {
