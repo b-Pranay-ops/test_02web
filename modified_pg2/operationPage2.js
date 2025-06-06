@@ -59,7 +59,7 @@ const tables = [
         name: "SiL factory Usage Information", 
         hasTotal: false, 
         columns: [
-            { type: "hour", saved_Id_key: "hours", column_title: "Saved efforts with SiL factory to perform this task [hr]" },
+            { type: "hour", saved_Id_key: "hours", column_title: "Saved efforts with SiL factory [hr]" },
             // { type: "percentage", saved_Id_key: "percentage", column_title: "HCL Share [%]" }
         ]
     },
@@ -92,25 +92,25 @@ let std_table_value = {
             {"title": 'Cost of HiL lab per hour', "Rate": '20'}
         ],
         "Various Investment Products":{
-            "SiL from scratch":[
-                {"title": 'vECU OL', "Min duration [Hrs]": '250', "Loop Type": "Open Loop"},
-                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '26', "Loop Type": "Open Loop"},
-                {"title": 'vEL', "Min duration [Hrs]": '70', "Loop Type": "Closed Loop"},
-                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '80', "Loop Type": "Closed Loop"},
-                {"title": 'Closed loop validation', "Min duration [Hrs]": '260',  "Loop Type": "Closed Loop"}
+            "SiL from scratch (L)":[
+                {"title": 'vECU OL', "Min duration [Hrs]": '202', "Loop Type": "Open Loop"},
+                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '20', "Loop Type": "Open Loop"},
+                {"title": 'vEL', "Min duration [Hrs]": '40', "Loop Type": "Closed Loop"},
+                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '36', "Loop Type": "Closed Loop"},
+                {"title": 'Closed loop validation', "Min duration [Hrs]": '487',  "Loop Type": "Closed Loop"}
             ],
-            "SiL for Successive pVer":[
-                {"title": 'vECU OL', "Min duration [Hrs]": '240', "Loop Type": "Open Loop"},
-                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '30', "Loop Type": "Open Loop"},
-                {"title": 'vEL', "Min duration [Hrs]": '65', "Loop Type": "Closed Loop"},
-                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '70', "Loop Type": "Closed Loop"},
-                {"title": 'Closed loop validation', "Min duration [Hrs]": '220',  "Loop Type": "Closed Loop"}],
-            "SiL Maintenance Project":[
-                {"title": 'vECU OL', "Min duration [Hrs]": '210', "Loop Type": "Open Loop"},
-                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '22', "Loop Type": "Open Loop"},
-                {"title": 'vEL', "Min duration [Hrs]": '75', "Loop Type": "Closed Loop"},
-                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '60', "Loop Type": "Closed Loop"},
-                {"title": 'Closed loop validation', "Min duration [Hrs]": '200',  "Loop Type": "Closed Loop"}
+            "SiL for Successive pVer (M)":[
+                {"title": 'vECU OL', "Min duration [Hrs]": '115', "Loop Type": "Open Loop"},
+                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '20', "Loop Type": "Open Loop"},
+                {"title": 'vEL', "Min duration [Hrs]": '20', "Loop Type": "Closed Loop"},
+                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '12', "Loop Type": "Closed Loop"},
+                {"title": 'Closed loop validation', "Min duration [Hrs]": '226',  "Loop Type": "Closed Loop"}],
+            "SiL Series (S)":[
+                {"title": 'vECU OL', "Min duration [Hrs]": '75', "Loop Type": "Open Loop"},
+                {"title": 'vNP creation (per channel)', "Min duration [Hrs]": '0', "Loop Type": "Open Loop"},
+                {"title": 'vEL', "Min duration [Hrs]": '10', "Loop Type": "Closed Loop"},
+                {"title": 'vMDL [HiL 2 SiL]', "Min duration [Hrs]": '10', "Loop Type": "Closed Loop"},
+                {"title": 'Closed loop validation', "Min duration [Hrs]": '118',  "Loop Type": "Closed Loop"}
             ]
         },
         "Test Automation Table":[
@@ -124,7 +124,7 @@ let std_table_value = {
             {"title": 'OEM per delivery', "Price": '1500'}
         ],
         "SiL factory Usage Information":[
-            {"title": 'Total SiL Usage', "Saved efforts with SiL factory to perform this task [hr]": '50.4'}
+            {"title": 'Total SiL Usage', "Saved efforts with SiL factory [hr]": '50.4'}
         ],
         "CE Tests":[
             {"title": 'ComVeh  RT', "Hours": '96'},

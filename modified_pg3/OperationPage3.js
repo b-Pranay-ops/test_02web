@@ -37,6 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
         // updateProjectName(questionnaire_response["project_name"]); // Update project name if available
     }
 
+    // update Homw button listner
+    let new_project = document.getElementById("new_project");
+    new_project.onclick = () =>{
+        // remove all elements form questionarie responce
+        let answer = JSON.parse(localStorage.getItem('answers'));
+        for (let key in answer) {
+            delete answer[key];
+        }
+        localStorage.setItem('answers', JSON.stringify(answer));
+
+        // go tto home page
+        window.location.href='../index.html';
+
+    };
     // Generate charts based on the questionnaire responses
     createCharts();
 
@@ -288,7 +302,7 @@ function create_SiL_Trace(){
 
     // Extract the saved effort value (in hours) and convert it to a float
     const total_sil_usage = parseFloat(
-        sil_entry["Saved efforts with SiL factory to perform this task [hr]"]
+        sil_entry["Saved efforts with SiL factory [hr]"]
     );
 
     const lcl = parseFloat(table_info.tables["Standard Pricing"][1]["Rate"]); // Lower cost level
