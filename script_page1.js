@@ -22,7 +22,7 @@ const questions = [
         question: "Choose SIL type:*",
         type: "select",
         id: "question3",
-        options: ["", "SiL from scratch", "SiL for Successive pVer", "SiL Maintenance Project"],
+        options: ["", "SiL from scratch (L)", "SiL for Successive pVer (M)", "SiL Series (S)"],
         error_msg: "Please select valid SiL Type"
     },
     {
@@ -55,9 +55,6 @@ function createForm() {
         // label.textContent = question.question;
         label.innerHTML = question.question.replace(/\*/g, '<span style="color: red;">*</span>');
         div.appendChild(label);
-
-        
-        
         
         if (question.type === 'text') {
             const input = document.createElement('input');
@@ -334,8 +331,6 @@ function import_prefilled_file(event, input_id) {
                 // document.getElementById(input_id).value = 'Invalid JSON. Check console for details.';
 
                 const error_div = document.getElementById("errorDisplay");
-                // error_div.textContent  = "❌ Invalid JSON. Check console for details.";
-                // error_div.innerHTML = "❌ <i>Invalid JSON. Check console for details.</i>";
                 error_div.innerHTML = '<span style="font-style: italic; font-weight: normal;">❌ Invalid JSON. Check console for details.</span>';
                 document.getElementById(input_id).value = "";
             }
@@ -377,8 +372,7 @@ function SubmitbuttonClicked(e){
         if(question.question.includes("*")){
             const error_block = document.getElementById(`error_${question.id}`);
             // Check if the input value is empty
-            if(element.value.trim() === ""){
-                
+            if(element.value.trim() === ""){                
                 error_block.textContent = question.error_msg;
                 error_block.innerHTML = `<span style="font-style: italic; font-weight: normal;">⚠️ ${question.error_msg}</span>`;
                 formIsValid = false;
@@ -405,7 +399,7 @@ function SubmitbuttonClicked(e){
     // Redirect to page 2
    setTimeout(() => {
         window.location.href = 'modified_pg2/page2.html'; // Redirect to another page
-    }, 2000);
+    }, 1500);
 }
 
 function update_page_status(page_name){
